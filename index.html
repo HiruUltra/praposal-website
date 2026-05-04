@@ -1060,6 +1060,52 @@
       transform: translateY(-1px);
     }
 
+
+
+    /* ========== REFERENCES ========== */
+    .references-list {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      counter-reset: refs;
+    }
+
+    .reference-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.08);
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      line-height: 1.8;
+    }
+
+    .reference-item:last-child {
+      border-bottom: none;
+    }
+
+    .ref-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(0, 212, 255, 0.1);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .reference-item strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
     /* ========== FOOTER ========== */
     footer {
       border-top: 1px solid var(--border);
@@ -1257,6 +1303,7 @@
       <li><a href="#presentations">Presentations</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#references">References</a></li>
     </ul>
   </nav>
 
@@ -1265,13 +1312,15 @@
     <div
       style="min-height:100vh;display:flex;align-items:center;justify-content:flex-end;position:relative;overflow:hidden;padding:6rem 5rem 4rem 2rem; background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
       <!-- Gradient Overlay for presentation style -->
-      <div style="position:absolute; inset:0; background: linear-gradient(to right, rgba(5,10,20,0.4) 0%, rgba(5,10,20,0.85) 50%, rgba(5,10,20,0.98) 100%); z-index:0;"></div>
-      
+      <div
+        style="position:absolute; inset:0; background: linear-gradient(to right, rgba(5,10,20,0.4) 0%, rgba(5,10,20,0.85) 50%, rgba(5,10,20,0.98) 100%); z-index:0;">
+      </div>
+
       <div class="hero-grid-bg" style="z-index:0; opacity: 0.3;"></div>
       <div class="hero-orb hero-orb-1" style="z-index:0;"></div>
       <div class="hero-orb hero-orb-2" style="z-index:0;"></div>
       <div class="hero-orb hero-orb-3" style="z-index:0;"></div>
-      
+
       <div class="hero-content" style="z-index:1; text-align: right; max-width: 850px;">
         <div class="hero-badge">SLIIT · Faculty of Computing · Research Project 2025</div>
         <h1 class="hero-title">
@@ -1901,6 +1950,122 @@
             <textarea rows="4" placeholder="Your message here..."></textarea>
           </div>
           <button class="btn-submit">SEND MESSAGE →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- REFERENCES -->
+  <div class="section-wrapper alt-bg" id="references">
+    <div class="section-inner">
+      <div class="section-label">References</div>
+      <h2 class="section-title">References</h2>
+      <p style="color:var(--text-muted);margin-bottom:2rem;line-height:1.8;max-width:760px;">
+        The following references support the literature survey, technologies, and AI-based methods used in this research
+        project.
+      </p>
+
+      <div class="references-list">
+        <div class="reference-item">
+          <div class="ref-num">[1]</div>
+          <div><strong>H. Alessio, N. Malay, A. Maurer, and N. Bailer</strong>, “Examining the effect of proctoring on
+            online test scores,” Online Learning, vol. 21, no. 1, 2017.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[2]</div>
+          <div><strong>Y. Atoum, L. Chen, A. X. Liu, S. D. Hsu, and X. Liu</strong>, “Automated online exam proctoring,”
+            IEEE Transactions on Multimedia, 2017.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[3]</div>
+          <div><strong>A. Nigam, P. Pasricha, T. Singh, and R. Churi</strong>, “A systematic review on AI-based
+            proctoring systems,” Education and Information Technologies, 2021.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[4]</div>
+          <div><strong>H. Alessio and S. Messinger</strong>, “Privacy and bias concerns in automated proctoring
+            systems,” 2021.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[5]</div>
+          <div><strong>P. Viola and M. Jones</strong>, “Rapid object detection using a boosted cascade of simple
+            features,” Proc. IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2001.
+          </div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[6]</div>
+          <div><strong>K. Zhang, Z. Zhang, Z. Li, and Y. Qiao</strong>, “Joint face detection and alignment using
+            multitask cascaded convolutional networks,” IEEE Signal Processing Letters, vol. 23, no. 10, 2016.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[7]</div>
+          <div><strong>C. Lugaresi et al.</strong>, “MediaPipe: A framework for building perception pipelines,” arXiv
+            preprint arXiv:1906.08172, 2019.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[8]</div>
+          <div><strong>V. Lepetit, F. Moreno-Noguer, and P. Fua</strong>, “EPnP: An accurate O(n) solution to the PnP
+            problem,” International Journal of Computer Vision, 2009.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[9]</div>
+          <div><strong>T. Soukupová and J. Čech</strong>, “Real-time eye blink detection using facial landmarks,” 21st
+            Computer Vision Winter Workshop, 2016.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[10]</div>
+          <div><strong>A. Radford et al.</strong>, “Robust speech recognition via large-scale weak supervision,” OpenAI,
+            2022.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[11]</div>
+          <div><strong>J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova</strong>, “BERT: Pre-training of deep
+            bidirectional transformers for language understanding,” NAACL-HLT, 2019.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[12]</div>
+          <div><strong>A. Vaswani et al.</strong>, “Attention is all you need,” Advances in Neural Information
+            Processing Systems, 2017.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[13]</div>
+          <div><strong>G. Bradski</strong>, “The OpenCV Library,” Dr. Dobb’s Journal of Software Tools, 2000.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[14]</div>
+          <div><strong>K. Simonyan and A. Zisserman</strong>, “Very deep convolutional networks for large-scale image
+            recognition,” International Conference on Learning Representations (ICLR), 2015.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[15]</div>
+          <div><strong>A. Krizhevsky, I. Sutskever, and G. E. Hinton</strong>, “ImageNet classification with deep
+            convolutional neural networks,” Advances in Neural Information Processing Systems, 2012.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[16]</div>
+          <div><strong>T. Chen and C. Guestrin</strong>, “XGBoost: A scalable tree boosting system,” Proceedings of the
+            22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2016.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[17]</div>
+          <div><strong>L. Breiman</strong>, “Random forests,” Machine Learning, vol. 45, no. 1, pp. 5–32, 2001.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[18]</div>
+          <div><strong>A. Graves, A.-R. Mohamed, and G. Hinton</strong>, “Speech recognition with deep recurrent neural
+            networks,” IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2013.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[19]</div>
+          <div><strong>R. Smith</strong>, “An overview of the Tesseract OCR engine,” Ninth International Conference on
+            Document Analysis and Recognition (ICDAR), 2007.</div>
+        </div>
+        <div class="reference-item">
+          <div class="ref-num">[20]</div>
+          <div><strong>M. Abadi et al.</strong>, “TensorFlow: Large-scale machine learning on heterogeneous systems,”
+            Software available from tensorflow.org, 2015.</div>
         </div>
       </div>
     </div>
