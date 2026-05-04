@@ -1261,24 +1261,28 @@
   </nav>
 
   <!-- HERO / HOME -->
-  <section id="home" style="max-width:100%;padding:0;">
+  <section id="home" style="max-width: none; width: 100%; margin: 0; padding: 0; border: none;">
     <div
-      style="min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:6rem 2rem 4rem;">
-      <div class="hero-grid-bg"></div>
-      <div class="hero-orb hero-orb-1"></div>
-      <div class="hero-orb hero-orb-2"></div>
-      <div class="hero-orb hero-orb-3"></div>
-      <div class="hero-content">
+      style="min-height:100vh;display:flex;align-items:center;justify-content:flex-end;position:relative;overflow:hidden;padding:6rem 5rem 4rem 2rem; background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
+      <!-- Gradient Overlay for presentation style -->
+      <div style="position:absolute; inset:0; background: linear-gradient(to right, rgba(5,10,20,0.4) 0%, rgba(5,10,20,0.85) 50%, rgba(5,10,20,0.98) 100%); z-index:0;"></div>
+      
+      <div class="hero-grid-bg" style="z-index:0; opacity: 0.3;"></div>
+      <div class="hero-orb hero-orb-1" style="z-index:0;"></div>
+      <div class="hero-orb hero-orb-2" style="z-index:0;"></div>
+      <div class="hero-orb hero-orb-3" style="z-index:0;"></div>
+      
+      <div class="hero-content" style="z-index:1; text-align: right; max-width: 850px;">
         <div class="hero-badge">SLIIT · Faculty of Computing · Research Project 2025</div>
         <h1 class="hero-title">
           A <span class="grad">Next-Generation Smart</span><br>Classroom System
         </h1>
-        <p class="hero-abstract">
+        <p class="hero-abstract" style="margin-left: auto; margin-right: 0; font-size: 0.95rem; line-height: 1.7;">
           An integrated AI-powered platform for automated classroom monitoring, voice-based assessment, intelligent
           video analytics, and automated assignment evaluation transforming modern educational environments through
           cutting-edge technology.
         </p>
-        <div class="hero-keywords">
+        <div class="hero-keywords" style="justify-content: flex-end; font-size: 0.6rem;">
           <span class="kw">Smart Classroom</span>
           <span class="kw">Artificial Intelligence</span>
           <span class="kw">Computer Vision</span>
